@@ -1,0 +1,14 @@
+<nav>
+  <picture>
+    <img [src]="logo" alt="logo">
+  </picture>
+  <h3 (click)="toggleMenu()">{{ toggleBurger }}</h3>
+  <ul [class.show]="isOpen">
+    <li>
+      About
+    </li>
+    <li>
+      Contact
+    </li>
+  </ul>
+</nav>

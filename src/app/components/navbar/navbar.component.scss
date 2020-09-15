@@ -1,0 +1,24 @@
+@import "../../../styles";
+
+nav {
+  position: relative;
+  @include display_flex_row;
+  height: 12vh;
+  width: 100%;
+  background-color: #fff8e5;
+
+  ul {
+    display: none;
+    &.show {
+      @include display_flex_column;
+      position: absolute;
+      top: 13vh;
+      right: 0;
+    }
+  }
+}
+
+img {
+  height: 50px;
+  width: auto;
+}
