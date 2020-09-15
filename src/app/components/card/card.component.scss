@@ -2,4 +2,6 @@
 
 .card {
   @include display_flex_column;
+  border: 0.5vmin black solid;
+  width: max-content;
 }
