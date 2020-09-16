@@ -1,10 +1,10 @@
 <section class="card">
   <h2>
-    {{ title }}
+    {{ cardData.title }}
   </h2>
-  <p>{{ lineOne }}</p>
-  <p>{{ lineTwo }}</p>
+  <p>{{ cardData.lineOne }}</p>
+  <p>{{ cardData.lineTwo }}</p>
   <picture>
-    <img [src]="image" [alt]="altText" />
+    <img [src]="cardData.image" [alt]="cardData.altText" />
   </picture>
 </section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IMovie, jawsFilm } from 'src/assets/moviedata';
 
 @Component({
   selector: 'app-card',
@@ -6,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  title = 'CARDYBOI.';
-  lineOne = 'HEYYYYY!';
-  lineTwo = 'A-DIDDLE-DEEEDLE-DADDLEEEEEE!'
-  image = '../../../assets/images/stanley.jpg'
-  altText = 'picture of stanley'
+  cardData: IMovie = jawsFilm;
+
   constructor() { }
 
   ngOnInit(): void {
