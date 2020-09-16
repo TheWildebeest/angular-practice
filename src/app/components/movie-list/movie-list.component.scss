@@ -1,0 +1,12 @@
+.movie-list {
+  position: fixed;
+  top: 13vh;
+  left: 0;
+  height: 85vh;
+  width: 98vw;
+  margin: 0 auto;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
